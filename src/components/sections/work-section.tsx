@@ -90,12 +90,12 @@ const networks = [
     tag: "Поиск · Исследования",
   },
   {
-    name: "ElevenLabs",
-    company: "ElevenLabs",
-    url: "https://elevenlabs.io",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/forty/ElevenLabs_logo.svg/240px-ElevenLabs_logo.svg.png",
-    description: "Генерация реалистичного голоса и озвучка текстов. Позволяет создавать аудиоматериалы, подкасты и озвученные презентации для уроков.",
-    tag: "Аудио · Голос",
+    name: "MathGPTPro",
+    company: "MathGPT",
+    url: "https://mathgptpro.com",
+    logo: "https://mathgptpro.com/favicon.ico",
+    description: "Специализированный ИИ для решения математических задач. Пошагово объясняет решения, строит графики и помогает ученикам разобраться в сложных темах.",
+    tag: "Математика · Обучение",
   },
 ]
 
