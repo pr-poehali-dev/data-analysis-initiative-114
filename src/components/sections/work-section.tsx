@@ -92,7 +92,7 @@ const networks = [
   {
     name: "MathGPTPro",
     company: "MathGPT",
-    url: "https://mathgptpro.com",
+    url: "https://math-gpt.org/",
     logo: "https://mathgptpro.com/favicon.ico",
     description: "Специализированный ИИ для решения математических задач. Пошагово объясняет решения, строит графики и помогает ученикам разобраться в сложных темах.",
     tag: "Математика · Обучение",
