@@ -12,7 +12,7 @@ const networks = [
   {
     name: "GigaChat",
     company: "Сбер",
-    url: "https://giga.chat",
+    url: "https://giga.chat/",
     logo: "https://avatars.githubusercontent.com/u/136580992?s=200&v=4",
     description: "Российский ИИ-ассистент от Сбера. Отлично понимает русский язык, знает российские образовательные стандарты. Работает без VPN.",
     tag: "Текст · Русский язык",
