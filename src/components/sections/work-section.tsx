@@ -1,94 +1,151 @@
 import { useReveal } from "@/hooks/use-reveal"
 
+const networks = [
+  {
+    name: "ChatGPT",
+    company: "OpenAI",
+    url: "https://chat.openai.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/240px-ChatGPT_logo.svg.png",
+    description: "Самый популярный ИИ-ассистент. Пишет тексты, составляет планы уроков, объясняет сложные темы простым языком, помогает с творческими заданиями.",
+    tag: "Текст · Диалог",
+  },
+  {
+    name: "GigaChat",
+    company: "Сбер",
+    url: "https://gigachat.ru",
+    logo: "https://avatars.githubusercontent.com/u/136580992?s=200&v=4",
+    description: "Российский ИИ-ассистент от Сбера. Отлично понимает русский язык, знает российские образовательные стандарты. Работает без VPN.",
+    tag: "Текст · Русский язык",
+  },
+  {
+    name: "Claude",
+    company: "Anthropic",
+    url: "https://claude.ai",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/240px-Claude_AI_logo.svg.png",
+    description: "ИИ с акцентом на точность и безопасность. Отлично анализирует тексты, готовит методические материалы и документы.",
+    tag: "Текст · Анализ",
+  },
+  {
+    name: "Gemini",
+    company: "Google",
+    url: "https://gemini.google.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/240px-Google_Gemini_logo.svg.png",
+    description: "ИИ от Google с доступом к актуальной информации. Работает с изображениями и документами Google. Интегрирован в Google Workspace.",
+    tag: "Текст · Изображения",
+  },
+  {
+    name: "YandexGPT",
+    company: "Яндекс",
+    url: "https://300.ya.ru",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Yandex_logo_en.svg/240px-Yandex_logo_en.svg.png",
+    description: "ИИ от Яндекса: пересказывает документы, помогает с поиском, встроен в сервисы Яндекса. Доступен в России без ограничений.",
+    tag: "Текст · Поиск",
+  },
+  {
+    name: "Microsoft Copilot",
+    company: "Microsoft",
+    url: "https://copilot.microsoft.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/240px-Microsoft_logo_%282012%29.svg.png",
+    description: "ИИ-помощник встроен в Word, PowerPoint и Teams. Помогает писать документы, создавать презентации и анализировать данные.",
+    tag: "Офис · Документы",
+  },
+  {
+    name: "Midjourney",
+    company: "Midjourney Inc.",
+    url: "https://midjourney.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Midjourney_Emblem.png/240px-Midjourney_Emblem.png",
+    description: "Генерация изображений по текстовому описанию. Создаёт иллюстрации для учебных материалов, презентаций и плакатов.",
+    tag: "Изображения",
+  },
+  {
+    name: "Kandinsky",
+    company: "Сбер",
+    url: "https://fusionbrain.ai",
+    logo: "https://fusionbrain.ai/static/img/logo/logo.svg",
+    description: "Российская нейросеть для генерации изображений от Сбера. Бесплатно создаёт иллюстрации и арты по текстовому описанию на русском языке.",
+    tag: "Изображения · Бесплатно",
+  },
+  {
+    name: "Suno",
+    company: "Suno AI",
+    url: "https://suno.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Suno_logo_%28symbol%29.svg/240px-Suno_logo_%28symbol%29.svg.png",
+    description: "Генерирует музыку и песни по текстовому описанию. Подходит для создания образовательных песен, гимнов класса и фоновой музыки к мероприятиям.",
+    tag: "Музыка · Аудио",
+  },
+]
+
 export function WorkSection() {
-  const { ref, isVisible } = useReveal(0.3)
+  const { ref, isVisible } = useReveal(0.2)
 
   return (
     <section
       ref={ref}
-      className="flex h-screen w-screen shrink-0 snap-start items-center px-6 pt-20 md:px-12 md:pt-0 lg:px-16"
+      className="flex h-screen w-screen shrink-0 snap-start flex-col px-6 pt-20 md:px-12 lg:px-16 overflow-y-auto"
     >
-      <div className="mx-auto w-full max-w-7xl">
+      <div className="mx-auto w-full max-w-7xl py-8">
         <div
-          className={`mb-12 transition-all duration-700 md:mb-16 ${
+          className={`mb-10 transition-all duration-700 ${
             isVisible ? "translate-x-0 opacity-100" : "-translate-x-12 opacity-0"
           }`}
         >
-          <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+          <h2 className="mb-2 font-sans text-4xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
+            Нейросети
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Популярные инструменты для образования</p>
         </div>
 
-        <div className="space-y-6 md:space-y-8">
-          {[
-            {
-              number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
-              year: "2024",
-              direction: "left",
-            },
-            {
-              number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
-              year: "2024",
-              direction: "right",
-            },
-            {
-              number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
-              direction: "left",
-            },
-          ].map((project, i) => (
-            <ProjectCard key={i} project={project} index={i} isVisible={isVisible} />
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {networks.map((net, i) => (
+            <a
+              key={net.name}
+              href={net.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group flex flex-col rounded-xl border border-foreground/10 bg-foreground/5 p-4 backdrop-blur-sm transition-all duration-700 hover:border-foreground/30 hover:bg-foreground/10 ${
+                isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+              }`}
+              style={{ transitionDelay: `${i * 80}ms` }}
+            >
+              <div className="mb-3 flex items-center gap-3">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-foreground/10 bg-white/10 p-1.5">
+                  <img
+                    src={net.logo}
+                    alt={net.name}
+                    className="h-full w-full object-contain"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = "none"
+                      const parent = (e.target as HTMLImageElement).parentElement
+                      if (parent) parent.innerHTML = `<span class="font-mono text-sm font-bold text-foreground/70">${net.name[0]}</span>`
+                    }}
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-sans text-base font-medium text-foreground transition-transform duration-300 group-hover:translate-x-1">
+                    {net.name}
+                  </h3>
+                  <p className="font-mono text-xs text-foreground/45">{net.company}</p>
+                </div>
+                <span className="font-mono text-sm text-foreground/30 transition-colors group-hover:text-foreground/70">↗</span>
+              </div>
+
+              <p className="mb-3 flex-1 text-xs leading-relaxed text-foreground/70 md:text-sm">
+                {net.description}
+              </p>
+
+              <div className="border-t border-foreground/10 pt-3">
+                <span className="rounded-full border border-foreground/15 px-2 py-0.5 font-mono text-xs text-foreground/40">
+                  {net.tag}
+                </span>
+              </div>
+            </a>
           ))}
+        </div>
+
+        <div className="mt-6 pb-8">
+          <p className="font-mono text-xs text-foreground/35">Нажмите на карточку, чтобы перейти на сайт нейросети</p>
         </div>
       </div>
     </section>
-  )
-}
-
-function ProjectCard({
-  project,
-  index,
-  isVisible,
-}: {
-  project: { number: string; title: string; category: string; year: string; direction: string }
-  index: number
-  isVisible: boolean
-}) {
-  const getRevealClass = () => {
-    if (!isVisible) {
-      return project.direction === "left" ? "-translate-x-16 opacity-0" : "translate-x-16 opacity-0"
-    }
-    return "translate-x-0 opacity-100"
-  }
-
-  return (
-    <div
-      className={`group flex items-center justify-between border-b border-foreground/10 py-6 transition-all duration-700 hover:border-foreground/20 md:py-8 ${getRevealClass()}`}
-      style={{
-        transitionDelay: `${index * 150}ms`,
-        marginLeft: index % 2 === 0 ? "0" : "auto",
-        maxWidth: index % 2 === 0 ? "85%" : "90%",
-      }}
-    >
-      <div className="flex items-baseline gap-4 md:gap-8">
-        <span className="font-mono text-sm text-foreground/30 transition-colors group-hover:text-foreground/50 md:text-base">
-          {project.number}
-        </span>
-        <div>
-          <h3 className="mb-1 font-sans text-2xl font-light text-foreground transition-transform duration-300 group-hover:translate-x-2 md:text-3xl lg:text-4xl">
-            {project.title}
-          </h3>
-          <p className="font-mono text-xs text-foreground/50 md:text-sm">{project.category}</p>
-        </div>
-      </div>
-      <span className="font-mono text-xs text-foreground/30 md:text-sm">{project.year}</span>
-    </div>
   )
 }
