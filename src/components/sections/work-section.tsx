@@ -42,12 +42,12 @@ const networks = [
     tag: "Текст · Поиск",
   },
   {
-    name: "Microsoft Copilot",
-    company: "Microsoft",
-    url: "https://copilot.microsoft.com",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/240px-Microsoft_logo_%282012%29.svg.png",
-    description: "ИИ-помощник встроен в Word, PowerPoint и Teams. Помогает писать документы, создавать презентации и анализировать данные.",
-    tag: "Офис · Документы",
+    name: "Wolfram Alpha",
+    company: "Wolfram Research",
+    url: "https://www.wolframalpha.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Wolfram_Language_Logo_2016.svg/240px-Wolfram_Language_Logo_2016.svg.png",
+    description: "Интеллектуальная система вычислений и поиска знаний. Незаменима на уроках математики, физики и химии — решает задачи, строит графики и объясняет шаги решения.",
+    tag: "Математика · Наука",
   },
   {
     name: "Midjourney",
