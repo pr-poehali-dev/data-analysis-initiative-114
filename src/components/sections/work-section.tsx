@@ -73,6 +73,30 @@ const networks = [
     description: "Генерирует музыку и песни по текстовому описанию. Подходит для создания образовательных песен, гимнов класса и фоновой музыки к мероприятиям.",
     tag: "Музыка · Аудио",
   },
+  {
+    name: "DeepSeek",
+    company: "DeepSeek AI",
+    url: "https://chat.deepseek.com",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/DeepSeek_logo.svg/240px-DeepSeek_logo.svg.png",
+    description: "Бесплатный ИИ-ассистент с сильными аналитическими способностями. Отлично решает задачи по математике, программированию и логике, хорошо понимает русский язык.",
+    tag: "Текст · Математика",
+  },
+  {
+    name: "Perplexity",
+    company: "Perplexity AI",
+    url: "https://www.perplexity.ai",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Perplexity_AI_logo.svg/240px-Perplexity_AI_logo.svg.png",
+    description: "ИИ-поисковик, который отвечает на вопросы со ссылками на источники. Помогает учителям быстро находить достоверную информацию для подготовки к урокам.",
+    tag: "Поиск · Исследования",
+  },
+  {
+    name: "ElevenLabs",
+    company: "ElevenLabs",
+    url: "https://elevenlabs.io",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/forty/ElevenLabs_logo.svg/240px-ElevenLabs_logo.svg.png",
+    description: "Генерация реалистичного голоса и озвучка текстов. Позволяет создавать аудиоматериалы, подкасты и озвученные презентации для уроков.",
+    tag: "Аудио · Голос",
+  },
 ]
 
 export function WorkSection() {
