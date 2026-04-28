@@ -39,9 +39,9 @@ export function DefinitionsSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-4xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Словарь
+            ИИ: термины
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Ключевые понятия</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Ключевые определения</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
