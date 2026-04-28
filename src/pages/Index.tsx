@@ -261,28 +261,40 @@ export default function Index() {
         <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-16 pt-24 md:px-12 md:pb-24">
           <div className="max-w-3xl">
             <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
-              <p className="font-mono text-xs text-foreground/90">Современные технологии</p>
+              <p className="font-mono text-xs text-foreground/90">Цифровая революция в образовании</p>
             </div>
-            <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-6xl font-light leading-[1.1] tracking-tight text-foreground duration-1000 md:text-7xl lg:text-8xl">
+            <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-4xl font-light leading-[1.1] tracking-tight text-foreground duration-1000 md:text-5xl lg:text-6xl">
               <span className="text-balance">
-                Цифровое будущее
+                Добро пожаловать на сайт «Нейросети в образовании»!
               </span>
             </h1>
-            <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-foreground/90 duration-1000 delay-200 md:text-xl">
-              <span className="text-pretty">
-                Создаем современные веб-приложения и цифровые продукты, которые помогают бизнесу расти и развиваться.
-              </span>
-            </p>
+            <div className="mb-6 animate-in fade-in slide-in-from-bottom-4 space-y-4 duration-1000 delay-200">
+              <p className="max-w-2xl text-base leading-relaxed text-foreground/90 md:text-lg">
+                Мы рады приветствовать вас на платформе, посвящённой современным технологиям в обучении. Сегодня образование переживает настоящую цифровую революцию, и нейросети становятся одним из самых перспективных инструментов для развития как учеников, так и педагогов.
+              </p>
+              <div>
+                <p className="mb-2 font-sans text-sm font-semibold text-foreground/80 md:text-base">Почему это важно? Внедрение нейросетей позволяет:</p>
+                <ul className="max-w-2xl space-y-1.5 text-sm leading-relaxed text-foreground/80 md:text-base">
+                  <li className="flex gap-2"><span className="mt-1 shrink-0 text-foreground/50">•</span>персонализировать обучение, подстраивая программы под индивидуальные потребности каждого ученика</li>
+                  <li className="flex gap-2"><span className="mt-1 shrink-0 text-foreground/50">•</span>автоматизировать рутинные задачи, освобождая время педагогов для творчества и общения с детьми</li>
+                  <li className="flex gap-2"><span className="mt-1 shrink-0 text-foreground/50">•</span>делать обучение более интерактивным благодаря адаптивным платформам и виртуальным помощникам</li>
+                  <li className="flex gap-2"><span className="mt-1 shrink-0 text-foreground/50">•</span>анализировать большие объёмы данных для повышения качества образования</li>
+                </ul>
+              </div>
+              <p className="max-w-2xl text-sm leading-relaxed text-foreground/80 md:text-base">
+                На нашем сайте вы найдёте актуальные ссылки на полезные нейросети, обзоры инструментов и работающие промты для учителей. Присоединяйтесь и будьте на шаг впереди вместе с технологиями будущего!
+              </p>
+            </div>
             <div className="flex animate-in fade-in slide-in-from-bottom-4 flex-col gap-4 duration-1000 delay-300 sm:flex-row sm:items-center">
               <MagneticButton
                 size="lg"
                 variant="primary"
-                onClick={() => scrollToSection(4)}
+                onClick={() => scrollToSection(1)}
               >
-                Обсудить проект
+                Нейросети
               </MagneticButton>
               <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection(2)}>
-                Наши услуги
+                Промты для учителей
               </MagneticButton>
             </div>
           </div>
