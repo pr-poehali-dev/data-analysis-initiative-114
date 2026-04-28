@@ -18,11 +18,11 @@ const networks = [
     tag: "Текст · Русский язык",
   },
   {
-    name: "Claude",
-    company: "Anthropic",
-    url: "https://claude.ai",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/240px-Claude_AI_logo.svg.png",
-    description: "ИИ с акцентом на точность и безопасность. Отлично анализирует тексты, готовит методические материалы и документы.",
+    name: "Qwen",
+    company: "Alibaba",
+    url: "https://chat.qwen.ai",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Qwen_logo.svg/240px-Qwen_logo.svg.png",
+    description: "Мощный ИИ-ассистент от Alibaba. Поддерживает русский язык, хорошо справляется с длинными текстами, анализом документов и написанием учебных материалов.",
     tag: "Текст · Анализ",
   },
   {
